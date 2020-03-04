@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginBottom="50dp"
+    android:padding="20dp">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp">
+
+        <RadioButton
+            android:id="@+id/etc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English to St. Charles' Weird Language"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/cte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="St. Charles' Weird Language to English"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Sentence Here"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/radiogroup"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/text"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/edit"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textIsSelectable="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/text"
+        android:text="Convert"
+        android:textColor="@android:color/white"
+        android:id="@+id/button"
+        android:background="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Property of the Don Bosco Choir"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
+
+</ScrollView>
